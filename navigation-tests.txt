@@ -1,0 +1,19 @@
+1. Given user has successfully logged in
+When user has navigated to inventory page
+And clicks hamburger navigation icon
+Then side menu should succesfully open
+And correct menu options should appear successfully
+
+2. Given hamburger menu is open
+When user clicks All Items menu option
+Then user should be redirected to the inventory page
+
+3. Given hamburger menu is open
+When user clicks About menu option
+Then user should be redirected to the About page
+
+4. Given hamburger menu is open
+When user clicks Logout menu option
+Then user should be succesfully be logged out
+And user should be redirected to login page successfully
+
