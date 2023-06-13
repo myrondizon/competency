@@ -1,0 +1,33 @@
+1. Given user has signed up for an account
+When user has inputted valid username and password
+And user clicks login button
+Then user should be able to login
+
+2. Given user has signed up for an account
+When user has inputted invalid username and valid password
+And user clicks login button
+Then user should not be able to login
+And validation prompts should appear
+
+3. Given user has signed up for an account
+When user has inputted valid username and invalid password
+And user clicks login button
+Then user should not be able to login
+And validation prompts should appear
+
+4. Given user has signed up for an account
+When user has inputted invalid username and invalid password
+And user clicks login button
+Then user should not be able to login
+And validation prompts should appear
+
+5. Given input fields are empty
+When user clicks login
+Then user should not login 
+and validation prompts should appear
+
+6. Given user's account has been suspended
+When suspended user inputs credentials
+And user clicks login
+Then user should not be logged in
+And error prompt should appear
